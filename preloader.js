@@ -29,13 +29,12 @@ overlay.appendChild(lottieContainer);
 document.body.appendChild(overlay);
 
 function hideOverlay() {
-    overlay.style.display = 'flex'; // Exibe o overlay com o lottie
+    overlay.style.display = 'flex';
     lottieContainer.style.display = 'block';
 
-    // Substitua pela URL direta do seu arquivo JSON do Lottie.
     lottie.loadAnimation({
         container: lottieContainer,
-        renderer: 'svg', // ou 'canvas' se preferir
+        renderer: 'svg',
         loop: true,
         autoplay: true,
         path: 'https://joseadelmo.github.io/preloaderJSLottie/iSOW_web_preload.lottie.json',
