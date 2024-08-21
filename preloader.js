@@ -18,20 +18,20 @@ lottieContainer.id = 'lottieContainer';
 lottieContainer.style.cssText = `
     max-width: 100%;
     max-height: 100%;
-    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
 `;
-lottieContainer.style.display = 'none';
 
+overlay.appendChild(lottieContainer);
 document.body.appendChild(overlay);
-document.body.appendChild(lottieContainer);
 
 function hideOverlay() {
-    overlay.style.display = 'none';
+    overlay.style.display = 'flex'; // Exibe o overlay com o lottie
     lottieContainer.style.display = 'block';
+
     // Substitua pela URL direta do seu arquivo JSON do Lottie.
     lottie.loadAnimation({
         container: lottieContainer,
@@ -41,9 +41,5 @@ function hideOverlay() {
         path: 'https://joseadelmo.github.io/preloaderJSLottie/iSOW_web_preload.lottie.json',
     });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    hideOverlay(); // Teste sem o setTimeout
-});
 
 window.addEventListener('load', hideOverlay);
