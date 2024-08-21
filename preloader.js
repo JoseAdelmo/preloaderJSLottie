@@ -34,7 +34,7 @@ function hideOverlay() {
     lottieContainer.style.display = 'block';
     lottie.loadAnimation({
         container: lottieContainer,
-        renderer: 'svg', // ou 'canvas' se preferir
+        renderer: 'svg',
         loop: true,
         autoplay: true,
         path: 'https://joseadelmo.github.io/preloaderJSLottie/iSOW_web_preload.lottie.json',
