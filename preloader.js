@@ -9,7 +9,7 @@ overlay.style.cssText = `
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #F8F8FF;
     z-index: 999;
 `;
 
