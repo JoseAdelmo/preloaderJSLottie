@@ -29,7 +29,7 @@ overlay.appendChild(lottieContainer);
 document.body.appendChild(overlay);
 
 function showLoader() {
-    overlay.style.display = 'flex'; // Exibe o overlay e o Lottie
+    overlay.style.display = 'flex';
     lottieContainer.style.display = 'block';
     lottie.loadAnimation({
         container: lottieContainer,
