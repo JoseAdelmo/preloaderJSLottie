@@ -41,4 +41,4 @@ function hideOverlay() {
     });
 }
 
-window.addEventListener('load', hideOverlay);
+window.addEventListener('load');
