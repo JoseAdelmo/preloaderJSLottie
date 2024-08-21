@@ -38,7 +38,7 @@ function hideOverlay() {
         renderer: 'svg', // ou 'canvas' se preferir
         loop: true,
         autoplay: true,
-        path: 'https://JoseAdelmo.github.io/preloaderJSLottie/iSOW_web_preload.lottie.json',
+        path: 'https://joseadelmo.github.io/preloaderJSLottie/iSOW_web_preload.lottie.json',
     });
 }
 
